@@ -7,9 +7,16 @@ div {
   margin: 10px;
   border: 1px solid #777777;
 }
-#skills {
-  color: green;
+.head2 {
+  color: darkblue;
+}
 }
 .language {
   color: purple;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

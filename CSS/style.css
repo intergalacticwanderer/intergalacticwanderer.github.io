@@ -1,48 +1,81 @@
 body {
   background-color: #f5f5f5;
 }
-div {
-  background-color: white;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #777777;
+
+.test {
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 5px;
+}
+
+#left-sidebar {
+  width: 30%;
+  float: left;
+  border-color: red;
+}
+
+#content-wrap {
+  border-color: blue;
+}
+
+#content {
+  border-color: green;
+  padding-left: 35%;
+}
+
+#my-photo {
+  border-radius: 50%;
 }
 .head2 {
   color: darkblue;
-}
 }
 .language {
   color: purple;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 #top-menu-bar {
-  text-align:center;
-  color:#fff;
-  background-color:#334455;
+  text-align: center;
+  color: #fff;
+  background-color: #334455;
 }
 
 #top-menu-bar li {
-  display:inline;
-  margin:0;
-  padding:0;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
-#top-menu-bar a{
+#top-menu-bar a {
   color: #fff;
-  padding:3px 12px 3px 12px;
+  padding: 3px 12px 3px 12px;
   text-decoration: none;
   margin: 2px 0 2px 0;
-  display:inline-block;
+  display: inline-block;
 }
 #top-menu-bar a:hover {
-  background-color:grey;
+  background-color: grey;
 }
 
 #top-menu-bar a:visited {
-  color:#fff;
+  color: #fff;
+}
+
+.page-block {
+  background-color: white;
+  padding: 24px;
+  margin: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0);
+  border-radius: 2px;
+}
+
+div {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #777777;
 }

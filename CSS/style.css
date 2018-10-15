@@ -20,3 +20,29 @@ ul {
     margin: 0;
     padding: 0;
 }
+#top-menu-bar {
+  text-align:center;
+  color:#fff;
+  background-color:#334455;
+}
+
+#top-menu-bar li {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+
+#top-menu-bar a{
+  color: #fff;
+  padding:3px 12px 3px 12px;
+  text-decoration: none;
+  margin: 2px 0 2px 0;
+  display:inline-block;
+}
+#top-menu-bar a:hover {
+  background-color:grey;
+}
+
+#top-menu-bar a:visited {
+  color:#fff;
+}

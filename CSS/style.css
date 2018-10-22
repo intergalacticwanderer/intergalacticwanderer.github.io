@@ -2,35 +2,22 @@ body {
   background-color: #f5f5f5;
 }
 
-.test {
-  border: 1px solid #000;
-  margin: 5px;
-  padding: 5px;
-}
-
 #left-sidebar {
   width: 30%;
   float: left;
-  border-color: red;
+  background: lightblue;
 }
 
 #content-wrap {
-  border-color: blue;
 }
 
 #content {
-  border-color: green;
   padding-left: 35%;
+  background: lightblue;
 }
 
 #my-photo {
   border-radius: 50%;
-}
-.head2 {
-  color: darkblue;
-}
-.language {
-  color: purple;
 }
 
 ul {
@@ -41,7 +28,7 @@ ul {
 #top-menu-bar {
   text-align: center;
   color: #fff;
-  background-color: #334455;
+  background-color: lightblue;
 }
 
 #top-menu-bar li {
@@ -77,5 +64,7 @@ div {
   background-color: white;
   padding: 10px;
   margin: 10px;
-  border: 1px solid #777777;
+}
+#contacts {
+  background: lightblue;
 }

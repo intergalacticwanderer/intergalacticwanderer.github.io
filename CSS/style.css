@@ -68,3 +68,7 @@ div {
 #contacts {
   background: lightblue;
 }
+
+#footer {
+  clear: both;
+}

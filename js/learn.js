@@ -33,3 +33,18 @@ console.info("eu am " + myRON + " RON");
 
 friendRON = friendEUR * cursEUR;
 console.info("el are " + friendRON + " RON");
+
+function extractFromAtm(ammount) {
+  console.info("==== ==== ==== ==== ====");
+  console.info("suma extrasa este: " + ammount);
+  var comision = ammount * 0.01;
+  if (comision < 2.5) {
+    comision = 2.5;
+    console.warn("comision minim aplicat");
+  }
+  console.info("comision aplicat: " + comision);
+  console.info("==== ==== ==== ==== ====");
+}
+
+extractFromAtm(1000);
+extractFromAtm(100);

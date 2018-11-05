@@ -61,7 +61,8 @@ function extractFromAtm(ammount) {
     console.error("bancnote insuficiente");
   }
   funds = funds - totalExtract;
-  atmFunds = atmFunds - ammount;
+  //atmFunds = atmFunds - ammount;
+  atmFunds -= ammount;
   console.info("comision aplicat: " + comision);
   console.info("Sold curent: " + funds);
   console.info("==== ==== ==== ==== ====");

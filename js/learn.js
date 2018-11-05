@@ -1,4 +1,4 @@
-console.info(0);
+console.info();
 
 function sayWelcome() {
   console.info("Salut " + prenume + " bine ai venit");
@@ -34,17 +34,41 @@ console.info("eu am " + myRON + " RON");
 friendRON = friendEUR * cursEUR;
 console.info("el are " + friendRON + " RON");
 
-function extractFromAtm(ammount) {
-  console.info("==== ==== ==== ==== ====");
-  console.info("suma extrasa este: " + ammount);
+var atmFunds = 30000;
+var funds = 5000;
+
+function getExtractFee(ammount) {
   var comision = ammount * 0.01;
   if (comision < 2.5) {
     comision = 2.5;
     console.warn("comision minim aplicat");
   }
+  return comision;
+}
+
+function extractFromAtm(ammount) {
+  console.info("==== ==== ==== ==== ====");
+  console.info("suma extrasa este: " + ammount);
+  var comision = getExtractFee(ammount);
+
+  var totalExtract = ammount + comision;
+
+  if (totalExtract > funds) {
+    console.error("insufficient funds");
+    return 0;
+  }
+  if (atmFunds < totalExtract) {
+    console.error("bancnote insuficiente");
+  }
+  funds = funds - totalExtract;
   console.info("comision aplicat: " + comision);
+  console.info("Sold curent: " + funds);
   console.info("==== ==== ==== ==== ====");
 }
 
 extractFromAtm(1000);
+extractFromAtm(100000); //fonduri insuficiente
+extractFromAtm(3000);
+extractFromAtm(3000);
 extractFromAtm(100);
+extractFromAtm(999999);
